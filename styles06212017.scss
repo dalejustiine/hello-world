@@ -1,0 +1,376 @@
+$green: #174F10;
+$green-hover: #3bad17; // #2a8f1d
+$green-hover-button: #1d6414;
+$gold: #FDCD1D;
+$red: #D92B2A;
+
+$white: #FFFFFF;
+$white-border: #E2E2E6;
+
+$grey: #FAFAFC;
+
+$gray: #f5f5f5;
+
+.panel {
+    .noborder {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+a {
+    color: $green;
+    transition: color 0.5s ease;
+
+    &:link {
+        text-decoration: none;
+    }
+
+    &:active, &:hover, &:focus {
+        color: $green-hover;
+    }
+}
+
+.news-item {
+    hr {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.news-item-title, .article-item-title {
+    font-weight: 600;
+}
+
+.news-item-content {
+    font-size: 13px;
+}
+
+.article-item {
+    margin-bottom: 10px;
+}
+
+// .navbar {
+//     background-color: $green;
+//     border-bottom: 1px solid $gold;
+
+//     .main-menu {
+//         padding-left: 15px;
+//         padding-right: 15px;
+//     }
+
+//     .container {
+//         background-color: $green;
+//         border-color: $green;
+//     }
+// }
+
+// .navbar-default {
+//     background-color: $green;
+//     border-bottom: 1px solid $gold;
+
+//     .main-menu {
+//         padding-left: 15px;
+//         padding-right: 15px;
+//     }
+
+//     .container {
+//         background-color: $green;
+//         border-color: $green;
+//     }
+
+//     .navbar-brand {
+//         &:focus, &:hover {
+//             color: $green-hover;
+//             background-color:transparent;
+//         }
+
+//         img {
+//             height: 100%;
+//             width: auto;
+//         }
+
+//         color: $gold;
+//     }
+
+//     .navbar-nav {
+//         li {
+//             a {
+//                 color: $gold;
+
+//                 &:focus, &:hover {
+//                     color: $green-hover;
+//                     background-color: $green;
+//                 }
+//             }
+
+//         }
+//     }
+
+//     .navbar-toggle {
+//         &:hover, &:focus {
+//             background-color: $green;
+//         }
+
+//         .icon-bar {
+//             background-color: $gold;
+//         }
+//     }
+
+//     .navbar-collapse {
+//         border-color: $gold;
+//     }
+// }
+
+.navbar-default {
+    background-color: $gray;
+    border-bottom: 1px solid $green;
+
+    .main-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    // .container {
+    //     background-color: $green;
+    //     border-color: $green;
+    // }
+    
+    .navbar-brand {
+        color: $green;
+
+        font-weight: 600;
+        text-shadow: 0px 1px 1px #fff;
+
+        &:focus, &:hover {
+            color: $green-hover;
+            background-color: transparent;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+        
+    }
+
+    .navbar-nav {
+        li {
+            font-weight: 600;
+            text-shadow: 0px 1px 1px #fff;
+            text-transform: uppercase;
+
+            a {
+                color: $green;
+
+                &:focus, &:hover {
+                    color: $green-hover;
+                    background-color: transparent;
+                }
+            }
+
+        }
+    }
+
+    .navbar-toggle {
+        &:hover, &:focus {
+            background-color: $gray;
+        }
+
+        .icon-bar {
+            background-color: $green;
+        }
+    }
+
+    .navbar-collapse {
+        border-color: $green;
+    }
+}
+
+// .navbar-static-bottom {
+//     // height: 350px;
+//     background-color: $green;
+//     border-top: 2px solid $gold;
+
+//     .copyright {
+//         color: $gold;
+//     }
+
+//     .container {
+//         background-color: $green;
+//         border-color: $green;
+//     }
+// }
+
+.contaier, .content {
+    padding: 0 25px 0 25px;
+}
+
+.btn-search {
+    background-color: $green;
+    border-color: $green;
+
+    &:hover, &:active, &:focus {
+        background-color: $green-hover-button;
+        border-color: $green-hover-button;
+    }
+
+    fa {
+        background-color: $green;
+        border-color: $green;
+    }
+}
+
+.btn-default {
+    background-color: $green;
+    border-color: $green;
+
+    &:active:hover, &:focus:hover {
+        background-color: $green;
+        border-color: $green;
+    }
+
+    .fa-search {
+        color: white;
+    }
+}
+
+.news-widgets {
+    padding-left: 20px;
+}
+
+.block {
+    .container {
+        .row {
+            .hr-index {
+                width: 10%
+            }
+
+            .block-title{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.navbar-static-bottom {
+    // background: url("/photos/landscape-nature-clouds-cloudy.jpg") no-repeat center bottom;
+    // background-size: cover;
+    height: 220px; //175
+    bottom: 0px; 
+    padding: 20px 0 20px 0;
+
+    border-top: 1px solid $green;
+    background-color: $gray; //#dddddd
+
+    // .container {
+    //     padding: 15px 0 15px 0;
+    // }
+
+    .container {
+        .row {
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-left {
+        float: left;
+        list-style: none;
+        position: relative;
+        // width: 340px;
+        text-shadow: 0px 1px 1px #fff;
+
+        li {
+            padding: 0px 15px 0px 0px;
+            // font-family: 'source_sans_problack',"Arial Black",Gadget,sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            // color: #000;
+            // font-size: 13px;
+            float: left;
+        }
+
+        .follow-container {
+            padding: 20px 0 20px 0;
+        }
+
+        .follow {
+            margin: 0 0 0 0;
+            font-weight: 600;
+        }
+
+        .follow-us {
+            padding: 0px 30px 0px 0px;
+            font-weight: 600;
+            font-size: 25px;
+            float: left;
+        }
+
+        .copyright {
+            text-align: left;
+            padding: 15px 0 0 0;
+            clear: both;
+            bottom: 0;
+        }
+    }
+}
+
+
+header {
+    background-color: $gray;
+    border-bottom: 1px solid $green;
+    
+    li {
+        font-weight: 600;
+        text-shadow: 0px 1px 1px #fff;
+        text-transform: uppercase;
+    }
+}
+
+.breadcrumb {
+    background-color: $gray;
+}
+
+.well {
+    border-top: 2px solid $green;
+}
+
+.search-result {
+    a {
+        font-weight: 600;
+    }
+}
+
+.datebg {
+    float: left;
+    width: 40px;
+    height: 40px;
+    // border-radius: 40px;
+    background: $green;
+    border: 1px solid $green;
+    line-height: 40px;
+    text-align: center;
+    clear: both;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+}
+
+.announcement-date {
+    font-weight: normal;
+    color: white;
+    padding: 6px 0px 0 2px;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: none;
+}
+
+.announcement-item{
+    margin-bottom: 10px;
+    line-height: 35px;
+
+    .announcement-item-title {
+        vertical-align: middle;
+    }
+
+}
